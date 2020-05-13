@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="485.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PCS.CollectorHandler.Emulator.CollectorEmulatorController">
+   <children>
+      <AnchorPane prefHeight="44.0" prefWidth="399.0">
+         <children>
+            <Button fx:id="PollACKButton" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#buttonPressed" text="Poll ACK" />
+          <Button fx:id="PollRequestButton" layoutX="88.0" layoutY="13.0" mnemonicParsing="false" onAction="#buttonPressed" text="Poll Request" />
+            <Button fx:id="autoPollButton" layoutX="187.0" layoutY="13.0" mnemonicParsing="false" onAction="#buttonPressed" text="Auto Poll: On" />
+            <Button fx:id="TurnOffAlarmButton" layoutX="293.0" layoutY="13.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="25.0" prefWidth="93.0" text="Turn off alarm" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="53.0" prefHeight="53.0" prefWidth="399.0">
+         <children>
+            <Label layoutX="14.0" layoutY="18.0" text="Ticket ID:" />
+            <TextField fx:id="TicketID" layoutX="74.0" layoutY="14.0" prefHeight="25.0" prefWidth="200.0" />
+            <Button fx:id="InputIDButton" layoutX="305.0" layoutY="10.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="34.0" prefWidth="82.0" text="Enter ID" />
+         </children></AnchorPane>
+      <TextArea fx:id="collectorTextArea" editable="false" layoutX="11.0" layoutY="119.0" prefHeight="356.0" prefWidth="379.0" />
+   </children>
+</AnchorPane>
